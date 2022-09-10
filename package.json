@@ -7,5 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Delos Aqua",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.0.18",
+    "react": "^18.2.0",
+    "typescript": "^4.8.3"
+  }
 }
