@@ -2,7 +2,9 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import CloudArrowDownIcon from '../../Icon/CloudArrowDownIcon';
-import Input, { InputProps } from './index';
+import Input, { InputProps } from '../../components/Input';
+
+import MDXDocumentation from './Input.stories.mdx';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -10,6 +12,11 @@ export default {
   component: Input,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
+  parameters: {
+    docs: {
+      page: MDXDocumentation,
+    },
+  },
 } as ComponentMeta<typeof Input>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -17,10 +24,11 @@ function Template(props: InputProps) {
   return <Input {...props} />;
 }
 
-export const Primary: ComponentStory<typeof Input> = Template.bind({});
+export const Playground: ComponentStory<typeof Input> = Template.bind({});
 
-Primary.args = {
+Playground.args = {
   label: 'Label',
   leftAccessory: <CloudArrowDownIcon />,
   variant: 'secondary',
+  size: 'sm',
 };

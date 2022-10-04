@@ -43,27 +43,22 @@ const sizeVariantWrapper = variant({
     xs: {
       fontSize: '0.75rem',
       lineHeight: '1rem',
-      height: '32px',
     },
     sm: {
       fontSize: '0.875rem',
       lineHeight: '1.25rem',
-      height: '36px',
     },
     md: {
       fontSize: '0.875rem',
       lineHeight: '1.25rem',
-      height: '40px',
     },
     lg: {
       fontSize: '0.875rem',
       lineHeight: '1.25rem',
-      height: '44px',
     },
     xl: {
       fontSize: '1rem',
       lineHeight: '1.5rem',
-      height: '52px',
     },
   },
 });

@@ -1,0 +1,106 @@
+<!-- Input.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import CloudArrowDownIcon from '../../Icon/CloudArrowDownIcon';
+import Input, { InputProps } from '../../components/Input';
+
+<Meta title="Example/Input" component={Input} />
+
+# Input
+
+Input description here.
+
+## Size Variant
+
+size description here. There is 5 variant of size: xs, sm, md, lg, xl
+
+<Canvas>
+  <Story name="Size">
+    <Input 
+      label='Label'
+      variant='secondary'
+      size='xs'
+    />
+    <Input 
+      label='Label'
+      variant='secondary'
+      size='sm'
+    />
+    <Input 
+      label='Label'
+      variant='secondary'
+      size='md'
+    />
+    <Input 
+      label='Label'
+      variant='secondary'
+      size='lg'
+    />
+    <Input 
+      label='Label'
+      variant='secondary'
+      size='xl'
+    />
+   </Story>
+</Canvas>
+
+## Type Variant
+
+Type description here. There is 4 variant of type: text, number, password, email
+
+<Canvas>
+  <Story name="Type">
+    <Input 
+      type="text"
+      label='Label'
+      variant='secondary'
+      size='md'
+    />
+    <Input 
+      type="number"
+      label='Label'
+      variant='secondary'
+      size='md'
+    />
+    <Input 
+      type="password"
+      label='Password'
+      variant='secondary'
+      size='md'
+    />
+    <Input 
+      type="email"
+      label='Email'
+      variant='secondary'
+      size='md'
+    />
+   </Story>
+</Canvas>
+
+## Type Variant
+
+Variant description here. There is 3 Variant by Color: primary, secondary, danger
+
+<Canvas>
+  <Story name="Variant">
+    <Input 
+      type="text"
+      label='Label'
+      variant='primary'
+      size='md'
+    />
+    <Input 
+      type="password"
+      label='Label'
+      variant='secondary'
+      size='md'
+    />
+    <Input 
+      type="email"
+      label='Email'
+      variant='danger'
+      size='md'
+    />
+   </Story>
+</Canvas>
