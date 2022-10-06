@@ -29,6 +29,7 @@ export const Playground: ComponentStory<typeof Input> = Template.bind({});
 Playground.args = {
   label: 'Label',
   leftAccessory: <CloudArrowDownIcon />,
+  rightAccessory: <CloudArrowDownIcon />,
   variant: 'secondary',
   size: 'sm',
 };

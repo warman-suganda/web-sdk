@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { useState, ReactNode } from 'react';
 import { ColorVariant, SizeVariant } from '../types';
 
 import {
@@ -7,6 +7,7 @@ import {
   InputStyle,
   InputWrapper,
   LeftAccessoryContainer,
+  RightAccessoryContainer,
 } from './styles';
 
 export type InputTypes = 'text' | 'password' | 'email' | 'number';
@@ -15,6 +16,7 @@ export interface InputProps {
   id?: string;
   type: InputTypes;
   leftAccessory?: ReactNode;
+  rightAccessory?: ReactNode;
   disabled?: boolean;
   label: string;
   size: SizeVariant;
@@ -27,14 +29,15 @@ export interface PreventEvent {
 
 function Input({
   id,
-  type,
+  type = 'text',
   leftAccessory,
+  rightAccessory,
   disabled,
   label,
-  size,
-  variant,
+  size = 'lg',
+  variant = 'primary',
 }: InputProps) {
-  const [showPassword, setShowPassword] = React.useState<boolean>(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
 
   const toggleEyes = (e: PreventEvent) => {
     e.preventDefault();
@@ -104,7 +107,10 @@ function Input({
           <LeftAccessoryContainer>{leftAccessory}</LeftAccessoryContainer>
         )}
         <InputStyle disabled={disabled} type={handleType()} />
-        {type === 'password' ? renderEyes() : ''}
+        <RightAccessoryContainer>
+          {type === 'password' ? renderEyes() : ''}
+          {rightAccessory}
+        </RightAccessoryContainer>
       </InputContainer>
     </InputWrapper>
   );
