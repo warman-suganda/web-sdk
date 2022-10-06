@@ -125,7 +125,6 @@ interface InputWrapperProps {
 interface InputContainerProps {
   size?: SizeVariant;
   variant?: ColorVariant;
-  outline?: boolean;
 }
 
 interface InputLabelProps {
@@ -136,6 +135,7 @@ export const InputWrapper = styled.div<InputWrapperProps>`
   ${sizeVariantWrapper}
   display: flex;
   flex-direction: column;
+  gap: 8px;
   font-family: 'Avenir';
   size: 14px;
 `;
@@ -177,8 +177,6 @@ export const InputStyle = styled.input`
 
 export const InputLabel = styled.div<InputLabelProps>`
   ${colorVariantLabel}
-  padding-top: 8px;
-  padding-bottom: 8px;
 `;
 
 export const LeftAccessoryContainer = styled.div`

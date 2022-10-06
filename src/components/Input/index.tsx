@@ -101,7 +101,7 @@ function Input({
 
   return (
     <InputWrapper id={id} size={size}>
-      <InputLabel variant={variant}>{label}</InputLabel>
+      {label && <InputLabel variant={variant}>{label}</InputLabel>}
       <InputContainer size={size} variant={variant}>
         {leftAccessory && (
           <LeftAccessoryContainer>{leftAccessory}</LeftAccessoryContainer>

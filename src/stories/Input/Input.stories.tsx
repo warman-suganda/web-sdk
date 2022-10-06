@@ -12,11 +12,6 @@ export default {
   component: Input,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-  parameters: {
-    docs: {
-      page: MDXDocumentation,
-    },
-  },
 } as ComponentMeta<typeof Input>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
