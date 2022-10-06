@@ -6,6 +6,8 @@ const theme = {
     secondary: '#6c757d',
     success: '#28a745',
     danger: '#dc3545',
+    danger20: '#dc354582',
+    danger0: '#dc354500',
     warning: '#ffc107',
     info: '#17a2b8',
     light: '#eaeaea',
