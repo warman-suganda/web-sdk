@@ -17,4 +17,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  storySort: {
+    order: ['Components'],
+  },
 }

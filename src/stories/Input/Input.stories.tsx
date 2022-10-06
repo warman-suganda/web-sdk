@@ -8,7 +8,7 @@ import MDXDocumentation from './Input.stories.mdx';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Input',
+  title: 'Components/Input/Playground',
   component: Input,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
